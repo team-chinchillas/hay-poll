@@ -1,8 +1,21 @@
 import React from 'react';
 import 'normalize.css';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch
+} from 'react-router-dom';
+import Loading from '../Loading';
 
 export default function App() {
   return (
-    <h1>h1</h1>
+    <Router>
+      <>
+      <Switch>
+        <Route path="/" component={Loading}></Route>
+      </Switch>
+      </>
+    </Router>
   );
 }
+
