@@ -1,6 +1,6 @@
 import { combinedReducer } from 'redux';
-import poll from './poll';
+import session from './session';
 
 export default combinedReducer() ({
-  poll
+  session
 });
