@@ -1,6 +1,6 @@
 import { combinedReducer } from 'redux';
+import poll from './poll';
 
-
-export default function reducer() ({
+export default combinedReducer() ({
   poll
-})
+});
