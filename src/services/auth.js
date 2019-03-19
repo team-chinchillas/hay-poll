@@ -1,6 +1,6 @@
 import { WebAuth } from 'auth0-js';
 
-const auth0 = newWebAuth({
+const auth0 = new WebAuth({
   domain: process.env.AUTH0_DOMAIN,
   clientID: process.env.AUTH0_CLIENT_ID,
   redirectUri: process.env.AUTH0_REDIRECT,
