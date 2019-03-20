@@ -4,11 +4,10 @@ const initialState = {
   token: ''
 };
 
-export default function reducer(state = initialState, action) {
-  console.log('action payload', action.payload);
-  switch(action.type) {
+export default function reducer(state = initialState, { type, payload }) {
+  switch(type) {
     case SET_SESSION:
-      return action.payload;
+      return payload;
     default:
       return state;  
   }
