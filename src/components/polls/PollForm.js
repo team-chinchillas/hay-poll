@@ -1,0 +1,34 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+
+function PollForm({ question, input, handleSubmit, questionChange, inputChange }) {
+  return (
+    <form onSubmit={handleSubmit}> 
+      <label>Question:
+        <input
+          type="text"
+          name="question"
+          placeHolder="Enter a question"
+          value={question}
+          onChange={questionChange} />
+      </label>
+
+      <textarea
+        name="input"
+        value={input}
+        onChange={inputChange} />
+      
+      <button>CREATE</button>
+    </form>
+  );
+}
+
+PollForm.propTypes = {
+  question: PropTypes.string.isRequired,
+  input: PropTypes.string.isRequired,
+  questionChange: PropTypes.func.isRequired,
+  inputChange: PropTypes.func.isRequired,
+  handleSubmit: PropTypes.func.isRequired
+};
+
+export default PollForm;
