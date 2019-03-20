@@ -2,10 +2,8 @@
 
 exports[`Polls snapshot can match a snapshot 1`] = `
 <ul>
-   
   <li>
     a question
   </li>
-   
 </ul>
 `;
