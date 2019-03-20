@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function PollForm({ question, input, handleSubmit, questionChange, inputChange }) {
   return (
-    <form onSubmit={handleSubmit}> 
+    <form onSubmit={handleSubmit.bind(null, question, input)}>
       <label>Question:
         <input
           type="text"
