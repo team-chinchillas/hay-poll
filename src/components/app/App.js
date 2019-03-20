@@ -8,7 +8,7 @@ import {
 import Loading from '../Loading';
 import { withSession } from '../../containers/auth/withSession';
 import Callback from '../../containers/auth/Callback';
-import Home from '../../pages/Home';
+import Home from '../Home';
 
 export default function App() {
   return (
