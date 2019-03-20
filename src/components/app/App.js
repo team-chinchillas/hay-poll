@@ -15,9 +15,9 @@ export default function App() {
     <Router>
       <>
       <Switch>
-        <Route path="/callback" component={Callback}></Route>
-        <Route path="/home" component={Home}></Route>
-        <Route path="/" component={withSession(Loading)}></Route>
+        <Route exact path="/callback" component={Callback}></Route>
+        <Route exact path="/home" component={withSession(Home)} />
+        <Route exact path="/" component={withSession(Loading)}></Route>
       </Switch>
       </>
     </Router>

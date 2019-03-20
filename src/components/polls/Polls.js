@@ -7,7 +7,7 @@ export default function Polls({ polls }) {
   });
 
   return (
-    <ul> {pollLists} </ul>
+    <ul>{pollLists}</ul>
   );
 }
 

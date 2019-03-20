@@ -1,10 +1,12 @@
 import { combineReducers } from 'redux';
-import session from './session';
 import polls from './polls';
 import pollForm from './pollForm';
+import pollDetails from './pollDetails';
+import session from './session';
 
 export default combineReducers({
-  pollForm,
   polls,
+  pollForm,
+  pollDetails,
   session
 });

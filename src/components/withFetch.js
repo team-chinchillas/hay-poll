@@ -12,9 +12,9 @@ export const withFetch = Component => {
       this.props.fetch();
     }
 
-    // componentWillUnmount() {
-    //   this.props.clear && this.props.clear();
-    // }
+    componentWillUnmount() {
+      this.props.clear && this.props.clear();
+    }
 
     render() {
       return <Component {...this.props} />;
