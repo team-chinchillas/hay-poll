@@ -9,7 +9,7 @@ export default function reducer(state = initialState, { type, payload }) {
     case CREATE_POLL:
       return {
         ...state,
-        polls: payload
+        polls: [...state.polls, payload]
       };
     default:
       return state;

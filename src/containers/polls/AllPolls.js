@@ -10,7 +10,6 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   fetch() {
-    console.log('FETCH!');
     dispatch(fetchPolls());
   }
 });
