@@ -8,16 +8,16 @@ function PollForm({ question, input, handleSubmit, questionChange, inputChange }
         <input
           type="text"
           name="question"
-          placeHolder="Enter a question"
+          placeholder="Enter a question"
           value={question}
           onChange={questionChange} />
       </label>
-
+      <br/>
       <textarea
         name="input"
         value={input}
         onChange={inputChange} />
-      
+      <br/>
       <button>CREATE</button>
     </form>
   );
