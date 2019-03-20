@@ -1,1 +1,1 @@
-export const getToken = state => state.session.getToken;
+export const getToken = state => state.session.token;

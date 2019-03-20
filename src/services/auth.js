@@ -1,8 +1,8 @@
 import { WebAuth } from 'auth0-js';
 
 const auth0 = new WebAuth({
-  domain: process.env.AUTH0_DOMAIN,
   clientID: process.env.AUTH0_CLIENT_ID,
+  domain: process.env.AUTH0_DOMAIN,
   redirectUri: process.env.AUTH0_REDIRECT,
   responseType: 'token id_token',
   scope: 'profile openid'
@@ -20,8 +20,9 @@ export const handleAuth = () => {
           if(err) return reject(err);
           console.log('info', info);
           resolve({
-            
-            
+            token: results.idToken,
+            name: info.name,
+            id: info.sub,
           });
         });
       } else {
