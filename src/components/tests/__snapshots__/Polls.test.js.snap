@@ -4,7 +4,7 @@ exports[`Polls snapshot can match a snapshot 1`] = `
 <ul>
    
   <li>
-    poll.question
+    a question
   </li>
    
 </ul>
